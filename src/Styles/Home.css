@@ -1,0 +1,15 @@
+/* .container {
+    padding: 10px;
+  } */
+  
+  /* .searchBar {
+    margin: 10px 0;
+  } */
+  
+  .productsLitems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  

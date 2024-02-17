@@ -1,0 +1,38 @@
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #83bb14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  
+  .socialMedia svg {
+    color: white;
+    margin: 20px;
+    font-size: 70px;
+    cursor: pointer;
+  }
+  
+/* Contact.css */
+.contact {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-link:hover {
+    background-color: #0056b3;
+  }
+  

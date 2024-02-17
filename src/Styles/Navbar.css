@@ -1,0 +1,137 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #83bb14;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+  
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+
+.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.center input {
+  border: 1px solid white; 
+  border-radius: 5px; 
+  padding: 10px;
+  width: 100%;
+}
+
+
+.center input:focus {
+	outline: none;
+}
+
+.center button {
+  border-radius: 10px;
+  padding: 5px 20px;
+  font-size: 7px;
+  background-color: #bcd786;
+  cursor: pointer;
+  border: none;
+}
+  
+.navbar .leftSide img {
+  width: 70px;
+}
+
+.navbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: 70px;
+  }
+  .navbar .leftSide {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .rightSide a {
+    display: none;
+  }
+
+  .navbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .rightSide button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}

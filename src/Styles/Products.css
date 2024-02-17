@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .searchBar {
+    width: 90%; 
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  
+  .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+
+  
+
+
+  @media only screen and (max-width: 1300px) {
+    .products {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .products {
+      grid-template-columns: 1fr;
+    }
+  }
+  
